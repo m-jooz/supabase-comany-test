@@ -1,6 +1,6 @@
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
-import { supabase } from "../../_shared/_shared";
-import { json } from "../../_shared/_shared";
+import { supabase } from "../../_shared/_shared.ts";
+import { json } from "../../_shared/_shared.ts";
 
 serve(async (req) => {
   try {
