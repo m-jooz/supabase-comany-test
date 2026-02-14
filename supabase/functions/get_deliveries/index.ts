@@ -13,7 +13,7 @@ serve(async (req) => {
     const { data: deliveries, error: deliveriesError } = await supabase
       .from("deliveries")
       .select(
-        "id, external_reference_id, delivery_date, package_details,status,notes,delivery_code,barcode,shipment_label_url,shipment_label_status, supplier_id",
+        "id, external_reference_id, package_details,status,notes,delivery_code,barcode,shipment_label_url,shipment_label_status, supplier_id",
       )
       .order("id", { ascending: false });
 
